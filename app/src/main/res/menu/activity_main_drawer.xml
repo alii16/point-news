@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="none">
+        <item android:title="Hubungi Pengembang">
+            <menu>
+                <item
+                    android:id="@+id/nav_instagram"
+                    android:icon="@drawable/instagram"
+                    android:title="Instagram" />
+
+                <item
+                    android:id="@+id/nav_github"
+                    android:icon="@drawable/github"
+                    android:title="GitHub" />
+
+                <item
+                    android:id="@+id/nav_linkedin"
+                    android:icon="@drawable/linkedin"
+                    android:title="LinkedIn" />
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="Komunikasi">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/baseline_share_24"
+                android:title="Bagikan" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/baseline_send_24"
+                android:title="Kirim Feedback" />
+        </menu>
+    </item>
+
+</menu>
