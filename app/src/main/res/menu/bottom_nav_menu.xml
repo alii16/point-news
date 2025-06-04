@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_health"
+        android:icon="@drawable/health"
+        android:title="Kesehatan" />
+
+    <item
+        android:id="@+id/nav_tech"
+        android:icon="@drawable/tech"
+        android:title="Teknologi"/>
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="Utama" />
+
+    <item
+        android:id="@+id/nav_entertainment"
+        android:icon="@drawable/entertainment"
+        android:title="Hiburan" />
+
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/search"
+        android:title="Cari" />
+
+</menu>
