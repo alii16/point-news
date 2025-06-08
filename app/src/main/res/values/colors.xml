@@ -16,5 +16,55 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="gradient_start_color">#FF4081</color> <color name="gradient_end_color">#5D00B8</color>
+    <color name="gradient_start_color">#FF4081</color>
+    <color name="gradient_end_color">#5D00B8</color>
+
+    <!-- New modern colors -->
+    <color name="title_gradient">#667EEA</color>
+    <color name="subtitle_gray">#64748B</color>
+    <color name="secondary_text">#94A3B8</color>
+    <color name="live_text">#065F46</color>
+    <color name="logo_border_gradient">#667EEA</color>
+
+    <!-- Background colors -->
+    <color name="header_bg_start">#F8FAFC</color>
+    <color name="header_bg_center">#FFFFFF</color>
+    <color name="header_bg_end">#F1F5F9</color>
+
+    <!-- Button colors -->
+    <color name="button_bg">#FFFFFF</color>
+    <color name="button_border">#E2E8F0</color>
+    <color name="button_pressed">#E2E8F0</color>
+
+    <!-- Accent colors -->
+    <color name="accent_blue">#667EEA</color>
+    <color name="accent_purple">#764BA2</color>
+    <color name="notification_red">#EF4444</color>
+    <color name="live_green">#10B981</color>
+
+    <!-- Background Colors -->
+    <color name="search_background">#FFFFFF</color>
+    <color name="search_input_background">#F9FAFB</color>
+    <color name="search_input_border">#E5E7EB</color>
+
+    <!-- Primary Colors -->
+    <color name="primary_600">#4F46E5</color>
+    <color name="primary_50">#EEF2FF</color>
+    <color name="primary_100">#E0E7FF</color>
+    <color name="primary_200">#C7D2FE</color>
+    <color name="primary_300">#A5B4FC</color>
+
+    <!-- Gray Colors -->
+    <color name="gray_50">#F9FAFB</color>
+    <color name="gray_100">#F3F4F6</color>
+    <color name="gray_200">#E5E7EB</color>
+    <color name="gray_300">#D1D5DB</color>
+    <color name="gray_400">#9CA3AF</color>
+    <color name="gray_500">#6B7280</color>
+    <color name="gray_700">#374151</color>
+    <color name="gray_900">#111827</color>
+
+    <!-- Chip Colors -->
+    <color name="chip_background_color">#F9FAFB</color>
+    <color name="chip_stroke_color">#E5E7EB</color>
 </resources>

@@ -66,4 +66,10 @@ dependencies {
     implementation ("com.google.android.material:material:1.12.0") // Gunakan versi terbaru yang kompatibel
     implementation ("com.airbnb.android:lottie:6.6.6")
     implementation ("de.hdodenhof:circleimageview:3.1.0")
+
+    // ViewPager2
+    implementation ("androidx.viewpager2:viewpager2:1.0.0")
+    // Glide (untuk memuat gambar dari URL)
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.16.0")
 }

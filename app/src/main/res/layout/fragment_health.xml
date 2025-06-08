@@ -10,42 +10,207 @@
         android:id="@+id/header_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:paddingStart="16dp"
-        android:paddingTop="12dp"
-        android:paddingBottom="12dp"
-        android:paddingEnd="8dp"
-        android:background="?attr/colorSurface"
-        android:elevation="4dp"
-        android:layout_alignParentTop="true">
+        android:orientation="vertical"
+        android:background="@color/white_primary"
+        android:elevation="8dp">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:src="@drawable/go_news"
-            android:contentDescription="Go News Logo"
-            android:layout_marginEnd="8dp"
-            app:civ_border_width="0dp"
-            app:civ_border_color="#FFFFFF" />
-        <TextView
-            android:id="@+id/tv_page_title"
-            android:layout_width="0dp"
+        <!-- Main Header Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Berita Kesehatan"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:textColor="@color/purple_500"
-            android:gravity="center_horizontal" />
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="24dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="8dp">
 
-        <ImageButton
-            android:id="@+id/btn_open_side_nav"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:src="@drawable/baseline_menu_24"
-            android:background="@android:color/transparent"
-            android:contentDescription="Open navigation drawer" />
+            <!-- Logo and Title Section -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Logo Container with Border -->
+                <FrameLayout
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:layout_marginEnd="12dp">
+
+                    <!-- Gradient Border Background -->
+                    <View
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:background="@drawable/logo_gradient_border" />
+
+                    <!-- White Background Circle -->
+                    <View
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/logo_white_bg" />
+
+                    <!-- Main Logo -->
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/go_news"
+                        android:background="@drawable/logo_inner_gradient"
+                        app:civ_border_width="0dp" />
+
+                    <!-- Notification Dot -->
+                    <View
+                        android:id="@+id/notification_dot"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="top|end"
+                        android:background="@drawable/notification_dot"
+                        android:visibility="visible" />
+
+                </FrameLayout>
+
+                <!-- Title and Subtitle -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_app_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GoNews"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/accent_blue"
+                        android:fontFamily="@font/inter_bold"
+                        android:letterSpacing="0.02"
+                        android:shadowColor="@color/accent_purple"
+                        android:shadowDx="1"
+                        android:shadowDy="1"
+                        android:shadowRadius="2" />
+
+                    <TextView
+                        android:id="@+id/tv_subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Berita Kesehatan"
+                        android:textSize="13sp"
+                        android:textColor="@color/subtitle_gray"
+                        android:fontFamily="@font/inter_medium"
+                        android:layout_marginTop="1dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Action Buttons Container -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <!-- Search Button -->
+                <ImageButton
+                    android:id="@+id/btn_search"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/baseline_search_24"
+                    android:background="@drawable/circular_button_bg"
+                    android:contentDescription="Search"
+                    android:scaleType="centerInside"
+                    android:padding="10dp" />
+
+                <!-- Menu Button -->
+                <ImageButton
+                    android:id="@+id/btn_open_side_nav"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/baseline_menu_24"
+                    android:background="@drawable/circular_button_bg"
+                    android:contentDescription="Open navigation drawer"
+                    android:scaleType="centerInside"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Secondary Info Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="16dp">
+
+            <!-- Live Status -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="16dp">
+
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:background="@drawable/live_indicator"
+                        android:layout_marginEnd="4dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Live"
+                        android:textSize="11sp"
+                        android:textColor="@color/live_text"
+                        android:fontFamily="@font/inter_medium" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_last_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update terakhir: 1 menit lalu"
+                    android:textSize="11sp"
+                    android:textColor="@color/secondary_text"
+                    android:fontFamily="@font/inter_regular" />
+
+            </LinearLayout>
+
+            <!-- News Counter -->
+            <TextView
+                android:id="@+id/tv_news_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10+ berita baru"
+                android:textSize="11sp"
+                android:textColor="@color/secondary_text"
+                android:fontFamily="@font/inter_regular" />
+
+        </LinearLayout>
+
+        <!-- Bottom Accent Line -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/bottom_accent_gradient" />
 
     </LinearLayout>
 

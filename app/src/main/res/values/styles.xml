@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- res/values/styles.xml - Tambahkan style berikut -->
+
+    <style name="CategoryChipStyle" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@drawable/category_chip_background</item>
+        <item name="chipStrokeWidth">0dp</item>
+        <item name="chipCornerRadius">20dp</item>
+        <item name="chipMinHeight">40dp</item>
+        <item name="chipStartPadding">16dp</item>
+        <item name="chipEndPadding">16dp</item>
+        <item name="textStartPadding">0dp</item>
+        <item name="textEndPadding">0dp</item>
+        <item name="android:textColor">@color/category_chip_text_color</item>
+        <item name="chipIconVisible">false</item>
+    </style>
+
+    <style name="RecentSearchChipStyle" parent="Widget.MaterialComponents.Chip.Entry">
+        <item name="chipBackgroundColor">@drawable/recent_search_chip_background</item>
+        <item name="chipStrokeWidth">0dp</item>
+        <item name="chipCornerRadius">16dp</item>
+        <item name="chipMinHeight">36dp</item>
+        <item name="chipStartPadding">12dp</item>
+        <item name="chipEndPadding">8dp</item>
+        <item name="textStartPadding">0dp</item>
+        <item name="textEndPadding">4dp</item>
+        <item name="android:textColor">@color/recent_search_chip_text_color</item>
+        <item name="chipIconVisible">false</item>
+        <item name="closeIconVisible">true</item>
+        <item name="closeIconTint">#9CA3AF</item>
+        <item name="closeIconSize">18dp</item>
+    </style>
+</resources>

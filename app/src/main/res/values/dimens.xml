@@ -2,4 +2,37 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- Chip Dimens -->
+    <dimen name="chip_stroke_width">1dp</dimen>
+    <dimen name="chip_corner_radius">12dp</dimen>
+
+    <!-- Search Input -->
+    <dimen name="search_input_height">48dp</dimen>
+    <dimen name="search_input_corner_radius">12dp</dimen>
+    <dimen name="search_input_padding_horizontal">20dp</dimen>
+    <dimen name="search_input_padding_internal">16dp</dimen>
+
+    <!-- Chip Dimensions -->
+    <dimen name="chip_corner_radius_small">16dp</dimen>
+    <dimen name="chip_min_height">40dp</dimen>
+    <dimen name="chip_min_height_small">36dp</dimen>
+    <dimen name="chip_padding">16dp</dimen>
+    <dimen name="chip_padding_small">12dp</dimen>
+    <dimen name="chip_padding_end_small">8dp</dimen>
+    <dimen name="chip_spacing">12dp</dimen>
+
+    <!-- Section Spacing -->
+    <dimen name="section_margin_top">32dp</dimen>
+    <dimen name="section_margin_small">16dp</dimen>
+    <dimen name="section_padding_horizontal">20dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="text_size_heading">18sp</dimen>
+    <dimen name="text_size_body">16sp</dimen>
+    <dimen name="text_size_caption">14sp</dimen>
+
+    <!-- Button Sizes -->
+    <dimen name="search_button_size">32dp</dimen>
+    <dimen name="close_icon_size">18dp</dimen>
 </resources>
