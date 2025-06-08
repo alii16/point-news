@@ -311,7 +311,7 @@
             android:textColor="#E02424"
             app:icon="@drawable/baseline_delete_24"
             app:iconTint="#E02424"
-            app:iconPadding="5dp"
+            app:iconPadding="2dp"
             app:iconGravity="textStart"
             style="?attr/materialButtonOutlinedStyle" />
 

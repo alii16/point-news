@@ -31,8 +31,8 @@
         <activity
             android:name=".ui.WebViewActivity"
             android:exported="false"
-            android:screenOrientation="fullSensor"
-            android:label="Berita Lengkap">
+            android:label="Berita Lengkap"
+            android:screenOrientation="portrait">
         </activity>
     </application>
 
